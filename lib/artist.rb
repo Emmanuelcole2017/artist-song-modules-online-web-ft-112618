@@ -9,10 +9,12 @@ class Artist
   include Memorable::InstanceMethods
   
   @@artists = []
-
   
-
-
+  def initialize
+    super
+    @songs = []
+  end
+  
   def self.all
     @@artists
   end
